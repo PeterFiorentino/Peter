@@ -1,0 +1,21 @@
+<!doctype>
+  <html>
+    <head>
+      <title>HTML & JS</title>
+      <script>
+        window.alert("Welcome!");
+        console.log("Hello");
+      </script>
+    </head>
+    <body>
+      <h1 id ="mainHeader" > HTML & JS </h1>
+      <p id ="welcome_para" > Welcome to my website. </p>
+      <p id ="last_para" > Thank you for visiting. </p>
+      <script>
+        let welcome = document.getElementById("welcome_para");
+        welcome.innerText = "Bonjour.";
+        let thanks = document.getElementById("last_para");
+        window.alert(`${welcome.innerText} ${thanks.innerText}`)
+      </script>
+    </body>
+  </html>
